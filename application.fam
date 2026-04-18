@@ -1,0 +1,19 @@
+App(
+    appid="gps_tracker",
+    name="GPS Tracker",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="gps_tracker_app",
+    requires=[
+        "gui",
+        "storage",
+        "notification",
+    ],
+    stack_size=2 * 1024,
+    order=90,
+    fap_icon="icon.png",
+    fap_category="GPS",
+    fap_version=(1, 0),
+    fap_description="NMEA GPS Tracker with SD card CSV logging",
+    fap_author="DIY",
+    fap_weburl="",
+)
